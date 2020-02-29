@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'metropolis';
+    src: url('../assets/fonts/metropolis-regular-webfont.woff2') format('woff2'),
+    url('../assets/fonts/metropolis-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../assets/fonts/metropolis-medium-webfont.woff2') format('woff2'),
+    url('../assets/fonts/metropolis-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../assets/fonts/metropolis-semibold-webfont.woff2') format('woff2'),
+    url('../assets/fonts/metropolis-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../assets/fonts/metropolis-bold-webfont.woff2') format('woff2'),
+    url('../assets/fonts/metropolis-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../assets/fonts/metropolis-extrabold-webfont.woff2') format('woff2'),
+    url('../assets/fonts/metropolis-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'metropolis';
+    src: url('../assets/fonts/metropolis-black-webfont.woff2') format('woff2'),
+    url('../assets/fonts/metropolis-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-background: #262A35;
+    --color-background-light: #6C747F;
+    --color-background-dark: #131b25;
+    --color-primary: white;
+    --color-primary-dark: #F4F5FF;
+    --color-secondary: #6387F2;
+    --font-size-standard: 1.6rem;
+    --font-size-smaller: 1.4rem;
+    --font-size-larger: 1.7rem;
+    --font-size-large: 1.8rem;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+    background-color: #262A35;
+    -webkit-text-size-adjust: 100%;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    position: relative;
+    display: block;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "metropolis", sans-serif;
+    font-size: var(--font-size-standard);
+    color: var(--color-primary);
+}
+
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+*::selection {
+    background: inherit;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+code {
+    padding: 0 0.7rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-background-dark);
+    color: var(--color-secondary);
+}
+
+h1 {
+    margin: 0;
+    font-size: 5rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 4rem;
+}
+
+h1, h2 {
+    padding: 1rem 0;
+    border-bottom: 0.2rem solid var(--color-background-light);
+}
+
+h3 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+h4 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h5 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+a {
+    background-color: transparent;
+    transition: color 0.1s;
+    text-decoration: none;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+table {
+    border-collapse: collapse;
+    border: 0.1rem solid var(--color-primary);
+    border-radius: 20px;
+}
+
+td, th {
+    padding: 1rem;
+}
+
+thead {
+    text-align: left;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+img {
+    border-style: none;
+}
+
+p {
+    margin: 0;
+    line-height: 1.4;
+    white-space: pre-line;
+    word-break: break-all;
+}
+
+pre {
+    margin: 0 0 1.2rem 0;
+}
+
+pre code {
+    padding: 0.4rem 0.7rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+    list-style-type: circle;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    white-space: normal;
+    font-size: var(--font-size-larger);
+}
